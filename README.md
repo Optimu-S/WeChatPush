@@ -1,4 +1,7 @@
 # WeChatPush
+在原作者的基础上增加了对飞书Webhook的支持，Webhook部分代码来自[UESTC_Report](https://github.com/Optimu-S/UESTC_Report)
+
+飞书Webhook链接获取方法可见该Github项目，获取后将/itchat/config.py中的WEBHOOK_URL改为从飞书获取到的URL，将PHONE_TYPE改为5。
 
 基于itchat的微信消息接收端 感谢itchat大佬 和itchat-uos开发 因为我有些地方需要更改就单独下载了itchat的包然后更改的
 
