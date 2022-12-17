@@ -42,6 +42,9 @@ class farpush:
             headers = {'content-type': 'application/json'}
             r = requests.post(farpush_url + '/PushWeChatMes', data)
         else :
+            for check in self.block:
+                if check in title:
+                    return
             self.title = title
             self.content = content
             self.webhook_notice()
@@ -63,6 +66,9 @@ class farpush:
             headers = {'content-type': 'application/json'}
             r = requests.post(farpush_url + '/PushWeChatMes', data)
         else :
+            for check in self.block:
+                if check in title:
+                    return
             self.title = title
             self.content = content
             self.webhook_notice()
