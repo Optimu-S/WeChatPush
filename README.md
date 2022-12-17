@@ -1,5 +1,5 @@
 # WeChatPush
-在原作者的基础上增加了对飞书Webhook的支持，Webhook部分代码来自[UESTC_Report](https://github.com/imcyx/UESTC_Report)
+在原作者的基础上增加了对飞书Webhook的支持，Webhook部分代码来自[UESTC_Report](https://github.com/imcyx/UESTC_Report#%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2)。感谢imcyx造福USETC的学子们。
 
 本人没有学过Python，写出的代码BUG挺多的，有问题请邮件至op111683@gmail.com。
 
