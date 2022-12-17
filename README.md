@@ -1,7 +1,7 @@
 # WeChatPush
 在原作者的基础上增加了对飞书Webhook的支持，Webhook部分代码来自[UESTC_Report](https://github.com/Optimu-S/UESTC_Report)
 
-本人没有学过Python，写出的代码BUG挺多的，有问题请Issue反馈。
+本人没有学过Python，写出的代码BUG挺多的，有问题请邮件至op111683@gmail.com。
 
 飞书Webhook链接获取方法可见该Github项目，获取后将/itchat/config.py中的WEBHOOK_URL改为从飞书获取到的URL，将PHONE_TYPE改为5。
 
