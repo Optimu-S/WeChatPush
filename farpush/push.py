@@ -47,20 +47,25 @@ class farpush:
             self.webhook_notice()
 
     def mediapush(self, title, content, filename):
-        for check in self.block:
-            if check in title:
-                return
-        data = {
-            "content": content,
-            "title": title,
-            "regID": self.regid,
-            'phone': self.phone,
-            'through': self.through
-        }
-        resource = {"filename": filename}
-        data['resource'] = json.dumps(resource)
-        headers = {'content-type': 'application/json'}
-        r = requests.post(farpush_url + '/PushWeChatMes', data)
+        if PHONE_TYPE != 5 :
+            for check in self.block:
+                if check in title:
+                    return
+            data = {
+                "content": content,
+                "title": title,
+                "regID": self.regid,
+                'phone': self.phone,
+                'through': self.through
+            }
+            resource = {"filename": filename}
+            data['resource'] = json.dumps(resource)
+            headers = {'content-type': 'application/json'}
+            r = requests.post(farpush_url + '/PushWeChatMes', data)
+        else :
+            self.title = title
+            self.content = content
+            self.webhook_notice()
 
     def webhook_notice(self):
         """
